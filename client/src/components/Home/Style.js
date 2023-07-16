@@ -1,6 +1,9 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-export const Homepage = styled.main`
-    width: 100vw;
-    height: 100vh;
-`
+export const HomePage = styled.main`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+`;

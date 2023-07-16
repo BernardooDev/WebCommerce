@@ -1,11 +1,10 @@
-import { Homepage } from "./Style"
+import { HomePage } from "./Style";
 
 function Home() {
   return (
-    <Homepage>
-        <h1>This is the homepage</h1>
-    </Homepage>
-  )
+    <HomePage>
+    </HomePage>
+  );
 }
 
-export default Home
+export default Home;
