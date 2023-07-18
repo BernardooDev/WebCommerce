@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { QueryClientProvider, QueryClient } from "react-query";
 import Shop from "./components/Shop/Shop";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
@@ -7,8 +8,10 @@ import Header from "./components/Header/Header"
 import "./App.css";
 
 function App() {
+  const queryClient = new QueryClient()
   return (
     <>
+    <QueryClientProvider client={queryClient}>
     <BrowserRouter>
     <Header />
     <Routes>
@@ -18,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
     </Routes>
     </BrowserRouter>
+    </QueryClientProvider>
     </>
   );
 }

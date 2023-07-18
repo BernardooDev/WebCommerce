@@ -14,11 +14,11 @@ import {
 } from "./Style";
 
 import ChicagoJ1 from "../../assets/ChicagoJ1.png";
-import LightBlueJ1 from "../../assets/LightBlueJ1.png";
+import YeezyCooper from "../../assets/YeezyCooper.png";
 import YeezyOreo from "../../assets/YeezyOreo.png";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
-import BackGround from "../../assets/BackGround.png"
+import BackGround from "../../assets/BackGround.png";
 
 function Home() {
   return (
@@ -57,27 +57,27 @@ function Home() {
             <img src={ChicagoJ1} />
           </SingleProductImg>
           <SingleProductsTitle>
-            <h1>Oi</h1>
+            <h1>Jordan 1 - Chicago</h1>
             <p>Descrição</p>
           </SingleProductsTitle>
           <SingleProductsContainer />
         </SingleProductsBottom>
         <SingleProductsBottom>
           <SingleProductImg>
-            <img src={LightBlueJ1} />
+            <img className="Yeezy" src={YeezyCooper} />
           </SingleProductImg>
           <SingleProductsTitle>
-            <h1>Oi</h1>
+            <h1>Yeezy 350 - Cooper</h1>
             <p>Descrição</p>
           </SingleProductsTitle>
           <SingleProductsContainer />
         </SingleProductsBottom>
         <SingleProductsBottom>
           <SingleProductImg>
-            <img className="Oreo" src={YeezyOreo} />
+            <img className="Yeezy" src={YeezyOreo} />
           </SingleProductImg>
           <SingleProductsTitle>
-            <h1>Oi</h1>
+            <h1>Yeezy 350 - Oreo</h1>
             <p>Descrição</p>
           </SingleProductsTitle>
           <SingleProductsContainer />

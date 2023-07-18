@@ -138,7 +138,7 @@ export const SingleProductImg = styled.div`
     transform: rotateZ(-10deg);
   }
 
-  .Oreo {
+  .Yeezy {
     max-width: 135%;
   }
 `;
@@ -162,14 +162,19 @@ export const SingleProductsContainer = styled.div`
 
 export const SingleProductsTitle = styled.div`
   width: 100%;
-  height: 50%;
+  height: 45%;
   bottom: 5%;
   position: absolute;
   text-align: center;
   z-index: 100;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   h1 {
     color: whitesmoke;
+    font-size: 1.4rem;
   }
 
   p {
