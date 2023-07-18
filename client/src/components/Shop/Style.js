@@ -2,8 +2,11 @@ import styled from "styled-components"
 
 export const ShopPage = styled.main`
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 export const ShopProducts = styled.div`
@@ -17,9 +20,8 @@ export const ShopProducts = styled.div`
 `
 
 export const SingleProducts = styled.div`
-    margin-top: 3%;
     width: 20%;
-    height: 50%;
+    height: 40%;
     border: 1px solid red;
     display: flex;
     align-items: center;

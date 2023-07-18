@@ -19,8 +19,17 @@ import YeezyOreo from "../../assets/YeezyOreo.png";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import BackGround from "../../assets/BackGround.png";
+import axios from "axios";
+import { useQuery } from "react-query";
 
 function Home() {
+  const getSneakers = async () => {
+    const sneaker = await axios.get("http://localhost:3003/sneaker");
+    return sneaker.data;
+  };
+
+  const { data } = useQuery("sneakers", getSneakers);
+
   return (
     <HomePage>
       <img className="BackGround" src={BackGround} />
@@ -52,36 +61,18 @@ function Home() {
         </ButtonsTitlePage>
       </TitleTopPage>
       <ProductsBottom>
-        <SingleProductsBottom>
-          <SingleProductImg>
-            <img src={ChicagoJ1} />
-          </SingleProductImg>
-          <SingleProductsTitle>
-            <h1>Jordan 1 - Chicago</h1>
-            <p>Descrição</p>
-          </SingleProductsTitle>
-          <SingleProductsContainer />
-        </SingleProductsBottom>
-        <SingleProductsBottom>
-          <SingleProductImg>
-            <img className="Yeezy" src={YeezyCooper} />
-          </SingleProductImg>
-          <SingleProductsTitle>
-            <h1>Yeezy 350 - Cooper</h1>
-            <p>Descrição</p>
-          </SingleProductsTitle>
-          <SingleProductsContainer />
-        </SingleProductsBottom>
-        <SingleProductsBottom>
-          <SingleProductImg>
-            <img className="Yeezy" src={YeezyOreo} />
-          </SingleProductImg>
-          <SingleProductsTitle>
-            <h1>Yeezy 350 - Oreo</h1>
-            <p>Descrição</p>
-          </SingleProductsTitle>
-          <SingleProductsContainer />
-        </SingleProductsBottom>
+        {data?.slice(0, 3).map((d) => (
+          <SingleProductsBottom key={d.id}>
+            <SingleProductImg>
+              <img src={d.img} />
+            </SingleProductImg>
+            <SingleProductsTitle>
+              <h1>{d.product}</h1>
+              <p>R$ {d.price}</p>
+            </SingleProductsTitle>
+            <SingleProductsContainer />
+          </SingleProductsBottom>
+        ))}
       </ProductsBottom>
     </HomePage>
   );

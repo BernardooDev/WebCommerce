@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HomePage = styled.main`
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
   position: relative;
   background-color: rgba(0, 0, 0, 0.9);
@@ -12,7 +12,8 @@ export const HomePage = styled.main`
     width: 30%;
     height: 80%;
     right: 10%;
-    z-index: -1;
+    top: 5%;
+    z-index: 1;
   }
 `;
 
@@ -103,7 +104,7 @@ export const AddToCart = styled.button`
 
 export const ProductsBottom = styled.div`
   width: 60%;
-  height: 40%;
+  height: 35%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -137,16 +138,13 @@ export const SingleProductImg = styled.div`
     height: 150%;
     transform: rotateZ(-10deg);
   }
-
-  .Yeezy {
-    max-width: 135%;
-  }
 `;
 
 export const SingleProductsContainer = styled.div`
   width: 100%;
   height: 60%;
   opacity: 0.6;
+  z-index: 1;
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.2) 10%,
@@ -162,12 +160,11 @@ export const SingleProductsContainer = styled.div`
 
 export const SingleProductsTitle = styled.div`
   width: 100%;
-  height: 45%;
+  height: 40%;
   bottom: 5%;
   position: absolute;
   text-align: center;
-  z-index: 100;
-  border: 1px solid red;
+  z-index: 1000;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -175,9 +172,12 @@ export const SingleProductsTitle = styled.div`
   h1 {
     color: whitesmoke;
     font-size: 1.4rem;
+    height: 5%;
   }
 
   p {
     font-weight: bold;
+    font-size: 1.4rem;
+    color: whitesmoke;
   }
 `;
