@@ -53,6 +53,14 @@ export const LinksHeader = styled.ul`
   li {
     list-style: none;
   }
+
+  a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: whitesmoke;
+  }
+
+  
 `;
 
 export const CardHeader = styled.div`
@@ -62,8 +70,23 @@ export const CardHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 1.4rem;
+  text-align: center;
 
   .Search {
     color: whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;

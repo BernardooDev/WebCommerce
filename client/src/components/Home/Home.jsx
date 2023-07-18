@@ -17,10 +17,13 @@ import ChicagoJ1 from "../../assets/ChicagoJ1.png";
 import LightBlueJ1 from "../../assets/LightBlueJ1.png";
 import YeezyOreo from "../../assets/YeezyOreo.png";
 import { RiShoppingCart2Fill } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
+import BackGround from "../../assets/BackGround.png"
 
 function Home() {
   return (
     <HomePage>
+      <img className="BackGround" src={BackGround} />
       <TitleTopPage>
         <TitlePage>
           <h1>
@@ -38,9 +41,13 @@ function Home() {
           </p>
         </DescriptionTitlePage>
         <ButtonsTitlePage>
-          <ButtonShopwNow>Shop now</ButtonShopwNow>
+          <ButtonShopwNow>
+            <NavLink to="/shop">Shop now</NavLink>
+          </ButtonShopwNow>
           <AddToCart>
-            <RiShoppingCart2Fill /> Add to Cart
+            <NavLink to="/card">
+              <RiShoppingCart2Fill /> Add to Cart
+            </NavLink>
           </AddToCart>
         </ButtonsTitlePage>
       </TitleTopPage>
@@ -49,23 +56,31 @@ function Home() {
           <SingleProductImg>
             <img src={ChicagoJ1} />
           </SingleProductImg>
+          <SingleProductsTitle>
+            <h1>Oi</h1>
+            <p>Descrição</p>
+          </SingleProductsTitle>
           <SingleProductsContainer />
-          <SingleProductsTitle></SingleProductsTitle>
         </SingleProductsBottom>
         <SingleProductsBottom>
           <SingleProductImg>
             <img src={LightBlueJ1} />
           </SingleProductImg>
+          <SingleProductsTitle>
+            <h1>Oi</h1>
+            <p>Descrição</p>
+          </SingleProductsTitle>
           <SingleProductsContainer />
-          <SingleProductsTitle></SingleProductsTitle>
         </SingleProductsBottom>
         <SingleProductsBottom>
           <SingleProductImg>
             <img className="Oreo" src={YeezyOreo} />
           </SingleProductImg>
-          <SingleProductsContainer>
-            <SingleProductsTitle></SingleProductsTitle>
-          </SingleProductsContainer>
+          <SingleProductsTitle>
+            <h1>Oi</h1>
+            <p>Descrição</p>
+          </SingleProductsTitle>
+          <SingleProductsContainer />
         </SingleProductsBottom>
       </ProductsBottom>
     </HomePage>

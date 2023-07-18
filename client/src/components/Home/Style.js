@@ -5,24 +5,33 @@ export const HomePage = styled.main`
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: rgba(0,0,0,0.9)
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .BackGround {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    right: 10%;
+    z-index: -1;
+  }
 `;
 
 export const TitleTopPage = styled.section`
   width: 50%;
-  height: 80%;
+  height: 70%;
   overflow: hidden;
   position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-evenly;
   top: 0;
   left: 0;
 `;
 
 export const TitlePage = styled.div`
   width: 90%;
-  height: 50%;
+  height: 40%;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -31,28 +40,27 @@ export const TitlePage = styled.div`
     font-size: 4rem;
     color: whitesmoke;
   }
-
-  span {
-    color: purple;
-  }
 `;
 
 export const DescriptionTitlePage = styled.div`
-  width: 100%;
+  width: 90%;
   height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   p {
-    padding: 0 5%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: whitesmoke;
+
+    @media (max-width: 839px) {
+      font-size: 0.8rem;
+    }
   }
 `;
 export const ButtonsTitlePage = styled.div`
   width: 100%;
-  height: 25%;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,33 +69,41 @@ export const ButtonsTitlePage = styled.div`
 
 export const ButtonShopwNow = styled.button`
   width: 30%;
-  height: 50%;
+  height: 60%;
   border-radius: 10px;
   border: none;
-  color: purple;
   background-color: black;
   font-size: 1.2rem;
   font-weight: bold;
-  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
 `;
 
 export const AddToCart = styled.button`
   width: 30%;
-  height: 50%;
+  height: 60%;
   border-radius: 10px;
   background-color: transparent;
-  border: 1px solid purple;
+  border: 1px solid whitesmoke;
   font-size: 1.2rem;
   font-weight: bold;
-  color: purple;
-  box-shadow: 0px 0px 25px 0px rgba(140,15,140,0.3);
+  box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.3);
   cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
 `;
 
 export const ProductsBottom = styled.div`
   width: 60%;
-  height: 30%;
+  height: 40%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -119,22 +135,21 @@ export const SingleProductImg = styled.div`
     object-fit: contain;
     max-width: 150%;
     height: 150%;
-    transform: rotateZ(-10deg)
+    transform: rotateZ(-10deg);
   }
 
   .Oreo {
     max-width: 135%;
   }
-`
-
+`;
 
 export const SingleProductsContainer = styled.div`
   width: 100%;
   height: 60%;
-  opacity: 0.7;
+  opacity: 0.6;
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0.3) 10%,
+    rgba(255, 255, 255, 0.2) 10%,
     rgba(192, 192, 192, 0.1) 90%
   );
   position: absolute;
@@ -147,10 +162,17 @@ export const SingleProductsContainer = styled.div`
 
 export const SingleProductsTitle = styled.div`
   width: 100%;
-  height: 75%;
-  z-index: 10000;
-  opacity: 1;
+  height: 50%;
+  bottom: 5%;
+  position: absolute;
   text-align: center;
-  position: relative;
+  z-index: 100;
 
-`
+  h1 {
+    color: whitesmoke;
+  }
+
+  p {
+    font-weight: bold;
+  }
+`;

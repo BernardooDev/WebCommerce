@@ -3,13 +3,13 @@ import React from 'react'
 import { CardHeader, EmptyHeader, Header, LinksHeader, LogoHeader, NavHeader } from './Style';
 import { BsSearch } from 'react-icons/bs';
 import { RiShoppingCart2Fill } from 'react-icons/ri';
-import LogoSneaker from "../../assets/LogoSneaker.png"
+// import LogoSneaker from "../../assets/LogoSneaker.png"
 
 function header() {
   return (
     <Header>
     <LogoHeader>
-        <img src={LogoSneaker} />
+        {/* <img src={LogoSneaker} /> */}
     </LogoHeader>
     <NavHeader>
       <EmptyHeader />
@@ -26,7 +26,7 @@ function header() {
       </LinksHeader>
     </NavHeader>
     <CardHeader>
-      <BsSearch class="Search" />
+      <BsSearch className="Search" />
       <NavLink to="/card">
         <RiShoppingCart2Fill />
       </NavLink>
