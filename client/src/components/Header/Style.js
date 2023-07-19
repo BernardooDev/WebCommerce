@@ -4,7 +4,6 @@ import styled from "styled-components"
 export const Header = styled.header`
   width: 100vw;
   height: 15vh;
-  border: 1px solid;
   display: flex;
   align-items: center;
   background: rgba(0,0,0,0.9);
@@ -14,7 +13,7 @@ export const Header = styled.header`
 export const LogoHeader = styled.div`
   width: 20%;
   height: 100%;
-  border: 1px solid;
+  border: 1px solid whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +29,7 @@ export const LogoHeader = styled.div`
 export const NavHeader = styled.nav`
   width: 60%;
   height: 100%;
-  border: 1px solid;
+  border: 1px solid whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,12 +38,13 @@ export const NavHeader = styled.nav`
 export const EmptyHeader = styled.div`
   width: 40%;
   height: 100%;
+  border: 1px solid whitesmoke;
 `;
 
 export const LinksHeader = styled.ul`
   width: 60%;
   height: 100%;
-  border: 1px solid;
+  border: 1px solid whitesmoke;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -66,7 +66,7 @@ export const LinksHeader = styled.ul`
 export const CardHeader = styled.div`
   width: 20%;
   height: 100%;
-  border: 1px solid;
+  border: 1px solid whitesmoke;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

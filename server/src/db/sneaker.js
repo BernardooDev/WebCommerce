@@ -37,7 +37,7 @@ export const Sneakers = [
     },
     {
         id: 7,
-        product: "Yeezy 350 - Core Black Red",
+        product: "Yeezy 350 - Black Red",
         price: "1800",
         img: "http://localhost:3003/imagens/YeezyCoreBlackRed.png"
     },

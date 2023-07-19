@@ -11,7 +11,7 @@ export const HomePage = styled.main`
     position: absolute;
     width: 30%;
     height: 80%;
-    right: 10%;
+    right: 8%;
     top: 5%;
     z-index: 1;
   }
@@ -147,8 +147,8 @@ export const SingleProductsContainer = styled.div`
   z-index: 1;
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0.2) 10%,
-    rgba(192, 192, 192, 0.1) 90%
+    rgba(255, 255, 255, 0) 10%,
+    rgba(192, 192, 192, 0.3) 90%
   );
   position: absolute;
   bottom: 5%;
@@ -177,7 +177,7 @@ export const SingleProductsTitle = styled.div`
 
   p {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: whitesmoke;
   }
 `;

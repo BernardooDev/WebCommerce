@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
+  AddtoCart,
   ImageProducts,
   NameProducts,
   PriceProducts,
@@ -9,8 +10,11 @@ import {
 } from "./Style";
 import axios from "axios";
 import { useQuery } from "react-query";
+import { CartContext } from "../../context/Cart"
 
 function Shop() {
+  const { addToCart } = useContext(CartContext)
+
   const getSneakers = async () => {
     const sneaker = await axios.get("http://localhost:3003/sneaker");
     return sneaker.data;
@@ -30,6 +34,7 @@ function Shop() {
               <p>{d.product}</p>
             </NameProducts>
             <PriceProducts>R$ - {d.price}</PriceProducts>
+            <AddtoCart onClick={() => addToCart(d.id)}>Add to Cart</AddtoCart>
           </SingleProducts>
         ))}
       </ShopProducts>

@@ -6,11 +6,13 @@ import Contact from "./components/Contact/Contact";
 import Card from "./components/Card/Card";
 import Header from "./components/Header/Header"
 import "./App.css";
+import { CartContextProvider } from "./context/Cart";
 
 function App() {
   const queryClient = new QueryClient()
   return (
     <>
+    <CartContextProvider>
     <QueryClientProvider client={queryClient}>
     <BrowserRouter>
     <Header />
@@ -22,6 +24,7 @@ function App() {
     </Routes>
     </BrowserRouter>
     </QueryClientProvider>
+    </CartContextProvider>
     </>
   );
 }
