@@ -37,7 +37,6 @@ function header() {
       </LinksHeader>
     </NavHeader>
     <CardHeader>
-      <BsSearch className="Search" />
       <NavLink to="/cart">
         <RiShoppingCart2Fill />
         <NumberOfItens>

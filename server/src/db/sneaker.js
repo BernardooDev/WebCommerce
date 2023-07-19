@@ -8,7 +8,7 @@ export const Sneakers = [
     {
         id: 2,
         product: "Jordan 6 - Infrared",
-        price: "1800",
+        price: "1700",
         img: "http://localhost:3003/imagens/J6Infrared.png"
     },
     {
@@ -38,7 +38,7 @@ export const Sneakers = [
     {
         id: 7,
         product: "Yeezy 350 - Black Red",
-        price: "1800",
+        price: "2200",
         img: "http://localhost:3003/imagens/YeezyCoreBlackRed.png"
     },
     {

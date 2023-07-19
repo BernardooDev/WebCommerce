@@ -6,6 +6,7 @@ export const HomePage = styled.main`
   overflow: hidden;
   position: relative;
   background-color: rgba(0, 0, 0, 0.9);
+  font-family: 'VT323', monospace;
 
   .BackGround {
     position: absolute;
@@ -40,6 +41,7 @@ export const TitlePage = styled.div`
   h1 {
     font-size: 4rem;
     color: whitesmoke;
+    font-family: 'VT323', monospace;
   }
 `;
 
@@ -51,8 +53,9 @@ export const DescriptionTitlePage = styled.div`
   align-items: center;
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: whitesmoke;
+    font-family: 'VT323', monospace;
 
     @media (max-width: 839px) {
       font-size: 0.8rem;
@@ -74,7 +77,7 @@ export const ButtonShopwNow = styled.button`
   border-radius: 10px;
   border: none;
   background-color: black;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
@@ -82,6 +85,7 @@ export const ButtonShopwNow = styled.button`
   a {
     text-decoration: none;
     color: whitesmoke;
+    font-family: 'VT323', monospace;
   }
 `;
 
@@ -91,7 +95,7 @@ export const AddToCart = styled.button`
   border-radius: 10px;
   background-color: transparent;
   border: 1px solid whitesmoke;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.3);
   cursor: pointer;
@@ -99,6 +103,7 @@ export const AddToCart = styled.button`
   a {
     text-decoration: none;
     color: whitesmoke;
+    font-family: 'VT323', monospace;
   }
 `;
 
@@ -172,12 +177,12 @@ export const SingleProductsTitle = styled.div`
 
   h1 {
     color: whitesmoke;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   p {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: whitesmoke;
   }
 `;

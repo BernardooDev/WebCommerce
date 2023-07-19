@@ -7,10 +7,11 @@ export const CartPage = styled.main`
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.9);
+  font-family: "VT323", monospace;
 `;
 
 export const PaymentContainer = styled.div`
-  width: 20%;
+  width: 30%;
   height: 90%;
   background-color: white;
   box-shadow: 0px 0px 6px 0px rgba(191, 191, 191, 1);
@@ -30,6 +31,15 @@ export const TittlePaymentContainer = styled.div`
 export const DetailsProductsPayment = styled.div`
   width: 100%;
   height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 80%;
+    height: 110%;
+  }
 `;
 
 export const SingleProductPayment = styled.div`
@@ -42,6 +52,10 @@ export const TotalPricePayment = styled.div`
   width: 100%;
   height: 20%;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2rem;
 `;
 
 export const CartItems = styled.section`
@@ -66,7 +80,7 @@ export const DisplayItens = styled.div`
   flex-wrap: row;
   overflow-y: scroll;
   overflow-x: hidden;
-  box-shadow: 0px 0px 6px 0px rgba(3,0,3,1);
+  box-shadow: 0px 0px 6px 0px rgba(3, 0, 3, 1);
 `;
 
 export const SingleItem = styled.div`
@@ -83,17 +97,17 @@ export const SingleItem = styled.div`
 `;
 
 export const ImgSingleItem = styled.div`
-  width: 20%;
+  width: 25%;
   height: 80%;
   /* position: absolute; */
-  box-shadow: 0px 0px 6px 0px rgba(3,0,3,1);
+  box-shadow: 0px 0px 6px 0px rgba(3, 0, 3, 1);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   img {
-    width: 120%;
+    width: 100%;
     height: 100%;
   }
 `;
@@ -106,6 +120,7 @@ export const TitleSingleItem = styled.div`
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  font-size: 2rem;
   /* position: relative;
     left: 3%; */
 `;
@@ -117,13 +132,18 @@ export const PriceSingleItem = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 1.8rem;
 `;
 
 export const TrashSingleItem = styled.div`
   height: 100%;
-  width: 20%;
+  width: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+
+  svg {
+    font-size: 2rem;
+    cursor: pointer;
+  }
 `;

@@ -8,6 +8,7 @@ export const ShopPage = styled.main`
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.9);
+  font-family: 'VT323', monospace;
 `;
 
 export const ShopProducts = styled.div`
@@ -62,7 +63,7 @@ export const NameProducts = styled.div`
   text-align: center;
   align-items: center;
   color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 `;
 
 export const PriceProducts = styled.div`
@@ -72,7 +73,7 @@ export const PriceProducts = styled.div`
   align-items: center;
   justify-content: center;
   color: whitesmoke;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 `;
 
 export const AddtoCart = styled.button`
@@ -84,6 +85,8 @@ export const AddtoCart = styled.button`
     background-color: transparent;
     font-weight: bold;
     cursor: pointer;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
 
     &:hover {
       color: black;

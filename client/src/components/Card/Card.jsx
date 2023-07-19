@@ -19,7 +19,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import { GoTrash } from "react-icons/go";
 import { RiShoppingCart2Fill } from "react-icons/ri";
-
+import Payment from "../../assets/Payment.png"
 function Card() {
   const { cartItems, removeFromCart } = useContext(CartContext);
 
@@ -65,7 +65,7 @@ function Card() {
           <RiShoppingCart2Fill />
         </TittlePaymentContainer>
         <DetailsProductsPayment>
-          
+            <img src={Payment} />
         </DetailsProductsPayment>
         <TotalPricePayment>
           <h3>Items: {TotalOfItens}</h3>

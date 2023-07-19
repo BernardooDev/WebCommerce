@@ -7,6 +7,7 @@ export const Header = styled.header`
   align-items: center;
   background: rgba(0,0,0,0.9);
   z-index: 1;
+  font-family: 'VT323', monospace;
 `;
 
 export const LogoHeader = styled.div`
@@ -55,7 +56,7 @@ export const LinksHeader = styled.ul`
 
   a {
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: whitesmoke;
   }
 
@@ -71,15 +72,6 @@ export const CardHeader = styled.div`
   justify-content: space-evenly;
   font-size: 1.4rem;
   text-align: center;
-
-  .Search {
-    color: whitesmoke;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-  }
 
   a {
     color: whitesmoke;
