@@ -45,7 +45,7 @@ export const TitlePage = styled.div`
 
 export const DescriptionTitlePage = styled.div`
   width: 90%;
-  height: 20%;
+  height: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,14 +165,14 @@ export const SingleProductsTitle = styled.div`
   position: absolute;
   text-align: center;
   z-index: 1000;
-  display: flex;
+  text-align: center;
+  /* display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
 
   h1 {
     color: whitesmoke;
     font-size: 1.4rem;
-    height: 5%;
   }
 
   p {

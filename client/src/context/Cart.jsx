@@ -15,10 +15,10 @@ export const CartContextProvider = (props) => {
     setCartItems((prev) => [...prev, id]);
   };
 
-  const removeFromCart = () => {
-    // Implement your remove from cart logic here
+  const removeFromCart = (id) => {
+    setCartItems((prev) => prev.filter((itemId) => itemId !== id));
   };
-
+  
   return (
     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
       {props.children}

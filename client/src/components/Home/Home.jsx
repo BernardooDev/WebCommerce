@@ -43,10 +43,11 @@ function Home() {
         </TitlePage>
         <DescriptionTitlePage>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            repellendus quod ratione expedita quos ipsum, non voluptas iusto
-            quisquam et deleniti labore officia doloremque perferendis cum
-            excepturi. Ad, suscipit quibusdam.
+            Discover the latest collection of premium sneakers that combine
+            style and comfort. From iconic classics to cutting-edge designs, our
+            curated selection offers something for every sneaker enthusiast.
+            Step up your sneaker game and make a statement with our exclusive
+            range of footwear.
           </p>
         </DescriptionTitlePage>
         <ButtonsTitlePage>
@@ -54,7 +55,7 @@ function Home() {
             <NavLink to="/shop">Shop now</NavLink>
           </ButtonShopwNow>
           <AddToCart>
-            <NavLink to="/card">
+            <NavLink to="/cart">
               <RiShoppingCart2Fill /> Add to Cart
             </NavLink>
           </AddToCart>

@@ -84,4 +84,9 @@ export const AddtoCart = styled.button`
     background-color: transparent;
     font-weight: bold;
     cursor: pointer;
+
+    &:hover {
+      color: black;
+      background-color: whitesmoke;
+    }
 `
