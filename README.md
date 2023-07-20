@@ -21,6 +21,9 @@ Before running the project, make sure you have the following requirements:
 * Project dependencies installed by running the command:
 * npm install
 
+## Database Configuration
+The WebCommerce project does not require a database, as it focuses on frontend development with React and backend development with Express.
+
 ## Running the Project
 Follow these steps to run the WebCommerce project:
 
