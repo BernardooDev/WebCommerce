@@ -1,7 +1,9 @@
-# WebCommerce
+## WebCommerce
+
 This is a GitHub project for a WebCommerce application developed using Vite, React, React Router DOM, Axios, useContext, and React Icons on the frontend, and Express with CORS on the backend.
 
-# Features
+## Features
+
 The WebCommerce project offers the following features:
 
 # Listing of products with detailed information.
