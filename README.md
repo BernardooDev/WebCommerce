@@ -13,3 +13,26 @@ The WebCommerce project offers the following features:
 * Updating the quantity of products in the cart.
 * Completing the purchase process with user information.
 * Displaying error and success messages during the checkout process.
+
+## Requirements
+Before running the project, make sure you have the following requirements:
+
+* Installed Node.js and npm (You can download it from https://nodejs.org).
+* Project dependencies installed by running the command:
+* npm install
+
+## Running the Project
+Follow these steps to run the WebCommerce project:
+
+1. Clone this repository to your local environment:
+2. cd WebCommerce
+3. npm install
+4. npm run server
+5. npm run dev
+6. Access the application in your web browser
+
+## Contribution
+Contributions are welcome! If you find any issues or have any suggestions, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
