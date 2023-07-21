@@ -7,12 +7,9 @@ This is a GitHub project for a WebCommerce application developed using Vite, Rea
 The WebCommerce project offers the following features:
 
 ## Listing of products with detailed information.
-* Product search by name or category.
 * Adding products to the shopping cart.
 * Removing products from the shopping cart.
 * Updating the quantity of products in the cart.
-* Completing the purchase process with user information.
-* Displaying error and success messages during the checkout process.
 
 ## Requirements
 Before running the project, make sure you have the following requirements:
